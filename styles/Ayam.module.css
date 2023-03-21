@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  padding: 4rem 6rem;
+  gap: 5rem;
+  /* margin-top: 3rem; */
+  flex-direction: row;
+  /* width: 90%; */
+}
+
+.imageWrapper {
+  position: relative;
+  width: 40%;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.imageWrapper > span > img:hover {
+  transform: scale(1.1);
+}
+
+.right {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 2.2rem;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.right > :nth-child(1) {
+  font-size: 2.5rem;
+  /* font-weight: normal; */
+  /* color: var(--gray); */
+}
+.right > :nth-child(2) {
+  font-size: 2rem;
+  font-weight: 600;
+  /* color: var(--gray); */
+}
+
+.additional {
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.sauceVariant {
+  display: flex;
+  gap: 0.6rem;
+  font-weight: normal;
+  color: var(--themeRed);
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+.sauceVariant > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1.5rem;
+  border: 2px solid var(--themeRed);
+  border-radius: 2rem;
+}
+
+.sauceVariant > div:hover {
+  background-color: var(--themeRed);
+  color: white;
+  cursor: pointer;
+}
+
+.quantity {
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  gap: 3rem;
+}
+
+.counter {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.selected {
+  background-color: var(--themeRed);
+  color: white;
+  cursor: pointer;
+}

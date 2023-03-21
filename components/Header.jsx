@@ -3,19 +3,28 @@ import Image from "next/image";
 import Logo from "../assets/Logo.png";
 import { UilShoppingBag } from "@iconscout/react-unicons";
 import Button from "../components/Button";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <div className={css.header}>
-      <div className={css.logo}>
-        <Image src={Logo} alt="Logo" width={50} height={50} />
-        <span>Chicken William</span>
-      </div>
+      <Link href="/">
+        <div className={css.logo}>
+          <Image src={Logo} alt="Logo" width={50} height={50} />
+          <span>Chicken William</span>
+        </div>
+      </Link>
 
       <ul className={css.menu}>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Contact</li>
+        <Link href="/">
+          <li>Home</li>
+        </Link>
+        <Link href="#">
+          <li>Menu</li>
+        </Link>
+        <Link href="#">
+          <li>Contact</li>
+        </Link>
       </ul>
 
       <div className={css.navright}>
