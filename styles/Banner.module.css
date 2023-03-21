@@ -11,9 +11,9 @@
 
 .textBanner {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
   flex-direction: column;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: bold;
 }
 
@@ -21,6 +21,7 @@
   width: 70%;
   color: var(--gray);
   font-weight: 600;
+  font-size: 15px;
 }
 
 .btn {
@@ -35,8 +36,8 @@
 .imageContainer {
   width: 38rem;
   position: absolute;
-  top: -4rem;
-  left: 3.5rem;
+  /* top: -4rem; */
+  /* left: 0rem; */
 }
 
 .contactUs {
@@ -47,7 +48,7 @@
   width: max-content;
   padding: 1rem;
   border-radius: 5rem;
-  top: 1rem;
+  top: 0rem;
   left: 5rem;
   gap: 0.6rem;
   background-color: white;

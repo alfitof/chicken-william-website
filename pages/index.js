@@ -2,8 +2,11 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Banner from "../components/Banner";
 import css from "../styles/Home.module.css";
+import Services from "../components/Services";
+import { client } from "../lib/client";
+import Menu from "../components/Menu";
 
-export default function Home() {
+export default function Home({ ayams }) {
   return (
     <Layout>
       <div className={css.container}>
@@ -23,8 +26,20 @@ export default function Home() {
         {/* body */}
         <main>
           <Banner />
+          <Services />
+          <Menu ayams={ayams} />
         </main>
       </div>
     </Layout>
   );
 }
+
+export const getServerSideProps = async () => {
+  const query = '*[_type == "ayam"]';
+  const ayams = await client.fetch(query);
+  return {
+    props: {
+      ayams,
+    },
+  };
+};

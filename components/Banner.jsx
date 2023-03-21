@@ -10,20 +10,20 @@ export default function Banner() {
       {/* left */}
       <div className={css.leftSide}>
         <div className={css.textBanner}>
-          <span>Be The Fastest</span>
-          <span>In Delivering</span>
+          <span>Sensasi kenikmatan</span>
+          <span>di setiap gigitan</span>
           <span>
-            Your <span style={{ color: "var(--themeRed)" }}>Chicken Wing</span>
+            ayam{" "}
+            <span style={{ color: "var(--themeRed)" }}>Chicken William</span>
           </span>
         </div>
         <span className={css.miniText}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Nostrum nesciunt modi rerum quos illum eveniet corporis dolor repellat
-          nisi illo?
+          Setiap hidangan ayam kami disajikan dengan bumbu khas <br /> Chicken
+          William yang membuatnya sangat lezat dan <br /> nikmat. Kami juga
+          menawarkan berbagai pilihan saus dan <br /> sisi makanan yang akan
+          memuaskan selera Anda.
         </span>
-        <Link href="https://wa.me/0895700997065">
-          <button className={`btn ${css.btn}`}>AYO ORDER!</button>
-        </Link>
+        <button className={`btn ${css.btn}`}>AYO ORDER!</button>
       </div>
 
       {/* right */}
@@ -31,12 +31,14 @@ export default function Banner() {
         <div className={css.imageContainer}>
           <Image src={bannerImage} layout="intrinsic" />
         </div>
-        <div className={css.contactUs}>
-          <span>Hubungi Kami</span>
-          <div>
-            <UilPhone color="white" size="18" />
+        <Link href="https://wa.me/0895700997065?text=Saya mau pesan bang!">
+          <div className={css.contactUs}>
+            <span>Hubungi Kami</span>
+            <div>
+              <UilPhone color="white" size="18" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

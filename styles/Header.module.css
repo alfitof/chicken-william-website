@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 4.5rem;
 }
 
 .logo {
@@ -44,6 +44,8 @@
   display: flex;
   z-index: 99;
   cursor: pointer;
+  align-items: center;
+  margin-right: 1rem;
 }
 
 .badge {
@@ -58,5 +60,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  right: -0.5rem;
+  right: -0.2rem;
+  top: 0.2rem;
 }

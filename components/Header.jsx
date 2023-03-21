@@ -2,6 +2,7 @@ import css from "../styles/Header.module.css";
 import Image from "next/image";
 import Logo from "../assets/Logo.png";
 import { UilShoppingBag } from "@iconscout/react-unicons";
+import Button from "../components/Button";
 
 export default function Header() {
   return (
@@ -22,6 +23,7 @@ export default function Header() {
           <UilShoppingBag size={35} color="#2e2e2e" />
           <div className={css.badge}>1</div>
         </div>
+        <Button />
       </div>
     </div>
   );
