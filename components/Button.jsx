@@ -7,17 +7,17 @@ export default function Component() {
   if (session) {
     return (
       <>
-        <div class="dropdown">
+        <div className="dropdown">
           {" "}
-          <div class="profile">
+          <div className="profile">
             {" "}
             <Image
-              class="dropbtn"
+              className="dropbtn"
               src={session.user.image}
               width={38}
               height={38}
             />{" "}
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               {" "}
               <ul>
                 <li>
