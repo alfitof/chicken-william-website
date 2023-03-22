@@ -23,7 +23,9 @@ export default function Banner() {
           menawarkan berbagai pilihan saus dan <br /> sisi makanan yang akan
           memuaskan selera Anda.
         </span>
-        <button className={`btn ${css.btn}`}>AYO ORDER!</button>
+        <Link href="/menupage">
+          <button className={`btn ${css.btn}`}>AYO ORDER!</button>
+        </Link>
       </div>
 
       {/* right */}

@@ -6,6 +6,8 @@ import panahKiri from "../../assets/arrowLeft.svg";
 import panahKanan from "../../assets/arrowRight.svg";
 import { useState } from "react";
 import Head from "next/head";
+import { useStore } from "../../store/store";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Ayam({ ayam }) {
   const src = urlFor(ayam.image).url();
@@ -19,6 +21,18 @@ export default function Ayam({ ayam }) {
       ? null
       : setQuantity((prev) => prev - 1);
   };
+
+  const addAyam = useStore((state) => state.addAyam);
+  const addToCart = () => {
+    addAyam({
+      ...ayam,
+      price: ayam.price[Size],
+      quantity: Quantity,
+      size: Size,
+    });
+    toast.success("Berhasil ditambahkan!");
+  };
+
   return (
     <Layout>
       <Head>
@@ -131,8 +145,11 @@ export default function Ayam({ ayam }) {
             </div>
           </div>
 
-          <div className={`btn ${css.btn}`}>Tambahkan</div>
+          <div className={`btn ${css.btn}`} onClick={addToCart}>
+            Tambahkan
+          </div>
         </div>
+        <Toaster />
       </div>
     </Layout>
   );
