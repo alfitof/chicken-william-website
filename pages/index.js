@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import Banner from "../components/Banner";
 import css from "../styles/Home.module.css";
+
 import Services from "../components/Services";
 
 export default function Home() {

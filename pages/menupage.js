@@ -3,8 +3,10 @@ import Layout from "../components/layout";
 import css from "../styles/Home.module.css";
 import { client } from "../lib/client";
 import Menu from "../components/Menu";
+import { useSession, getSession } from "next-auth/react";
 
 export default function MenuPage({ ayams }) {
+  const { data: session } = useSession();
   return (
     <Layout>
       <div className={css.container}>
@@ -30,12 +32,25 @@ export default function MenuPage({ ayams }) {
   );
 }
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({ req }) => {
   const query = '*[_type == "ayam"]';
   const ayams = await client.fetch(query);
+  const session = await getSession({ req });
+
+  if (!session) {
+    return {
+      redirect: {
+        destination:
+          "https://chicken-william.vercel.app/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2F",
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
       ayams,
+      session,
     },
   };
 };

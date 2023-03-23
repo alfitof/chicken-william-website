@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function Component() {
   const { data: session } = useSession();
+
   if (session) {
     return (
       <>

@@ -3,8 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import bannerImage from "../assets/ayam.png";
 import { UilPhone } from "@iconscout/react-unicons";
+import { useSession } from "next-auth/react";
 
 export default function Banner() {
+  const { data: session } = useSession();
   return (
     <div className={css.container}>
       {/* left */}
@@ -23,9 +25,15 @@ export default function Banner() {
           menawarkan berbagai pilihan saus dan <br /> sisi makanan yang akan
           memuaskan selera Anda.
         </span>
-        <Link href="/menupage">
-          <button className={`btn ${css.btn}`}>AYO ORDER!</button>
-        </Link>
+        {session ? (
+          <Link href="/menupage">
+            <button className={`btn ${css.btn}`}>AYO ORDER!</button>
+          </Link>
+        ) : (
+          <Link href="https://chicken-william.vercel.app/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2F">
+            <button className={`btn ${css.btn}`}>AYO ORDER!</button>
+          </Link>
+        )}
       </div>
 
       {/* right */}
