@@ -30,7 +30,7 @@ export default function Banner() {
             <button className={`btn ${css.btn}`}>AYO ORDER!</button>
           </Link>
         ) : (
-          <Link href="https://chicken-william.vercel.app/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2F">
+          <Link href="https://chicken-william.vercel.app/api/auth/signin?callbackUrl=https%3A%2F%2Fchicken-william.vercel.app%2Fmenupage">
             <button className={`btn ${css.btn}`}>AYO ORDER!</button>
           </Link>
         )}

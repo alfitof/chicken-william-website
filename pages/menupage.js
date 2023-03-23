@@ -41,7 +41,7 @@ export const getServerSideProps = async ({ req }) => {
     return {
       redirect: {
         destination:
-          "https://chicken-william.vercel.app/api/auth/signin?callbackUrl=http%3A%2F%2Flocalhost%3A3000%2F",
+          "https://chicken-william.vercel.app/api/auth/signin?callbackUrl=https%3A%2F%2Fchicken-william.vercel.app%2Fmenupage",
         permanent: false,
       },
     };
