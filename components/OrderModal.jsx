@@ -5,10 +5,8 @@ import { useRouter } from "next/router";
 import { createOrder } from "../lib/orderHandler";
 import toast, { Toaster } from "react-hot-toast";
 import { useStore } from "../store/store";
-import { useSession } from "next-auth/react";
 
 export default function OrderModal({ opened, setOpened, PaymentMethod }) {
-  const { data: session } = useSession();
   const theme = useMantineTheme();
   const router = useRouter();
   const [FormData, setFormData] = useState({});
@@ -47,7 +45,6 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
           onChange={handleInput}
           type="text"
           name="name"
-          value={session.user.name}
           required
           placeholder="Name"
         />
