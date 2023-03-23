@@ -15,7 +15,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
     setFormData({ ...FormData, [e.target.name]: e.target.value });
   };
   const resetCart = useStore((state) => state.resetCart);
-  const total = typeof window !== "unde fined" && localStorage.getItem("total");
+  const total = typeof window !== "undefined" && localStorage.getItem("total");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
