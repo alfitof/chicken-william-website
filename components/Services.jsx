@@ -7,13 +7,13 @@ import css from "../styles/Service.module.css";
 export default function Services() {
   return (
     <div>
-      <div className={css.heading}>
+      <div className={css.heading} id="heading">
         <span>WHAT WE SERVE</span>
         <span>Your Favourite Food</span>
         <span>Delivery Partners</span>
       </div>
 
-      <div className={css.services}>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div className={css.fitur}>
           <div className={css.imageWrapper}>
             <Image src={fitur1} objectFit="cover" layout="intrinsic" />

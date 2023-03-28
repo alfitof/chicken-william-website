@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import css from "../styles/Home.module.css";
 
 import Services from "../components/Services";
+import Nav from "../components/Nav";
+import Hero from "../components/Hero";
 
 export default function Home() {
   return (
@@ -24,7 +26,9 @@ export default function Home() {
         </Head>
         {/* body */}
         <main>
-          <Banner />
+          {/* <Nav /> */}
+          <Hero />
+          {/* <Banner /> */}
           <Services />
         </main>
       </div>

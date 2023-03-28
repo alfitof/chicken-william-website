@@ -10,10 +10,13 @@
 .heading > :nth-child(1) {
   color: var(--themeRed);
   font-size: 1rem;
+  margin-bottom: 0.2rem;
 }
 .heading > :nth-child(2),
 .heading > :nth-child(3) {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  align-items: center;
+  text-align: center;
 }
 
 .services {
@@ -30,6 +33,7 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: 4rem;
 }
 
 .imageWrapper {
