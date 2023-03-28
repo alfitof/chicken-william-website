@@ -31,7 +31,7 @@ export default function Hero() {
       </div>
 
       <div>
-        <Image src={bannerImage} layout="intrinsic" />
+        <Image src={bannerImage} layout="intrinsic" alt="" />
       </div>
     </div>
   );

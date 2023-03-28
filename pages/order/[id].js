@@ -72,7 +72,7 @@ export default function Orders({ order }) {
         </div>
         <div className={css.statusContainer}>
           <div className={css.status}>
-            <Image src={Payment} width={50} height={50} />
+            <Image src={Payment} width={50} height={50} alt="" />
             <span>Pembayaran</span>
             {order.method === 0 ? (
               <span className={css.pending}>Cash On Delivery</span>
@@ -81,11 +81,11 @@ export default function Orders({ order }) {
             )}
           </div>
           <div className={css.status}>
-            <Image src={Cooking} width={50} height={50} />
+            <Image src={Cooking} width={50} height={50} alt="" />
             <span>Dimasak</span>
             {order.status === 1 && (
               <div className={css.spinner}>
-                <Image src={Spinner} />
+                <Image src={Spinner} alt="" />
               </div>
             )}
 
@@ -94,11 +94,11 @@ export default function Orders({ order }) {
             )}
           </div>
           <div className={css.status}>
-            <Image src={Onway} width={100} height={100} />
+            <Image src={Onway} width={100} height={100} alt="" />
             <span>OTW</span>
             {order.status === 2 && (
               <div className={css.spinner}>
-                <Image src={Spinner} />
+                <Image src={Spinner} alt="" />
               </div>
             )}
             {order.status > 2 && (
@@ -106,11 +106,11 @@ export default function Orders({ order }) {
             )}
           </div>
           <div className={css.status}>
-            <Image src={Paket} width={50} height={50} />
+            <Image src={Paket} width={50} height={50} alt="" />
             <span>Sampai</span>
             {order.status === 3 && (
               <div className={css.spinner}>
-                <Image src={Spinner} />
+                <Image src={Spinner} alt="" />
               </div>
             )}
             {order.status > 3 && (

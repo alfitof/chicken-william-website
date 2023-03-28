@@ -39,7 +39,7 @@ export default function Banner() {
       {/* right */}
       <div className={css.rightSide}>
         <div className={css.imageContainer}>
-          <Image src={bannerImage} layout="intrinsic" />
+          <Image src={bannerImage} layout="intrinsic" alt="" />
         </div>
         <Link href="https://wa.me/0895700997065?text=Saya mau pesan bang!">
           <div className={css.contactUs}>

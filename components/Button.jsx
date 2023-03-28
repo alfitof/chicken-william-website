@@ -17,6 +17,7 @@ export default function Component() {
               src={session.user.image}
               width={38}
               height={38}
+              alt=""
             />{" "}
             <div className="dropdown-content">
               {" "}

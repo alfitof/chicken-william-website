@@ -13,10 +13,10 @@ export default function Services() {
         <span>Delivery Partners</span>
       </div>
 
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         <div className={css.fitur}>
           <div className={css.imageWrapper}>
-            <Image src={fitur1} objectFit="cover" layout="intrinsic" />
+            <Image src={fitur1} objectFit="cover" layout="intrinsic" alt="" />
           </div>
           <span>Easy to Order</span>
           <span>
@@ -26,7 +26,7 @@ export default function Services() {
         </div>
         <div className={css.fitur}>
           <div className={css.imageWrapper}>
-            <Image src={fitur2} objectFit="cover" layout="intrinsic" />
+            <Image src={fitur2} objectFit="cover" layout="intrinsic" alt="" />
           </div>
           <span>Easy to Order</span>
           <span>
@@ -36,7 +36,7 @@ export default function Services() {
         </div>
         <div className={css.fitur}>
           <div className={css.imageWrapper}>
-            <Image src={fitur3} objectFit="cover" layout="intrinsic" />
+            <Image src={fitur3} objectFit="cover" layout="intrinsic" alt="" />
           </div>
           <span>Easy to Order</span>
           <span>

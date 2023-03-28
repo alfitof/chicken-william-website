@@ -24,6 +24,7 @@ export default function Menu({ ayams }) {
                     loader={() => src}
                     layout="fill"
                     objectFit="cover"
+                    alt=""
                   />
                 </div>
               </Link>

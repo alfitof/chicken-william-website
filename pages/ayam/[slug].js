@@ -55,6 +55,7 @@ export default function Ayam({ ayam }) {
             loader={() => src}
             unoptimized
             layout="fill"
+            alt=""
             objectFit="cover"
           />
         </div>
@@ -140,6 +141,7 @@ export default function Ayam({ ayam }) {
                 src={panahKiri}
                 height={20}
                 width={20}
+                alt=""
                 objectFit="contain"
                 onClick={() => handleQuantity("dec")}
               />
@@ -148,6 +150,7 @@ export default function Ayam({ ayam }) {
               <Image
                 src={panahKanan}
                 height={20}
+                alt=""
                 width={20}
                 objectFit="contain"
                 onClick={() => handleQuantity("inc")}
