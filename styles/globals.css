@@ -150,6 +150,7 @@ a {
 .profile ul li i {
   margin-right: 7px;
 }
+
 @media (min-width: 768px) {
   #banner {
     /* color: aqua; */
