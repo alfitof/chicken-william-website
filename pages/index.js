@@ -31,7 +31,7 @@ export default function Home() {
           <Hero />
           {/* <Banner /> */}
           <Services />
-          <ProductSection />
+          {/* <ProductSection /> */}
         </main>
       </div>
     </Layout>
