@@ -6,6 +6,7 @@ import css from "../styles/Home.module.css";
 import Services from "../components/Services";
 import Nav from "../components/Nav";
 import Hero from "../components/Hero";
+import ProductSection from "../components/ProductSection";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <Hero />
           {/* <Banner /> */}
           <Services />
+          <ProductSection />
         </main>
       </div>
     </Layout>

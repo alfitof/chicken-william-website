@@ -12,7 +12,7 @@ export default function Menu({ ayams }) {
         <span>Make you fall in love</span>
       </div>
 
-      <div className={css.menu}>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
         {ayams.map((ayam, id) => {
           const src = urlFor(ayam.image).url();
           return (
