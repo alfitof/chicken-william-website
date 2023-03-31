@@ -65,6 +65,7 @@ export default function Cart() {
                           objectFit="cover"
                           width={85}
                           height={85}
+                          alt=""
                           src={src}
                         />
                       </td>
