@@ -24,22 +24,30 @@ export default function Header() {
 
       <ul className={css.menu}>
         <Link href="../">
-          <li>Home</li>
+          <a>
+            <li>Home</li>
+          </a>
         </Link>
         <Link href="/menupage">
-          <li>Menu</li>
+          <a>
+            <li>Menu</li>
+          </a>
         </Link>
         <Link href="#">
-          <li>Contact</li>
+          <a>
+            <li>Contact</li>
+          </a>
         </Link>
       </ul>
 
       <div className={css.navright}>
         <Link href="/cart">
-          <div className={css.cart}>
-            <UilShoppingBag size={35} color="#2e2e2e" />
-            <div className={css.badge}>{items}</div>
-          </div>
+          <a>
+            <div className={css.cart}>
+              <UilShoppingBag size={35} color="#2e2e2e" />
+              <div className={css.badge}>{items}</div>
+            </div>
+          </a>
         </Link>
         {Order && (
           <Link href={`/order/${Order}`}>

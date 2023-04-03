@@ -40,7 +40,7 @@ export default function Component() {
   }
   return (
     <>
-      <button className="btn" onClick={() => signIn()}>
+      <button className="btn" id="buttonLog" onClick={() => signIn()}>
         Login
       </button>
     </>

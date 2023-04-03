@@ -8,7 +8,10 @@ import { useSession } from "next-auth/react";
 export default function Hero() {
   const { data: session } = useSession();
   return (
-    <div className="grid grid-cols-1 place-items-center gap-0 lg:grid-cols-2 lg:gap-10 ">
+    <div
+      className="grid grid-cols-1 place-items-center gap-0 lg:grid-cols-2 lg:gap-10 mt-16 lg:mt-20"
+      id="home"
+    >
       <div className="mb-16 text-center lg:mb-0 lg:text-left lg:pl-20">
         <h1 className=" font-bold" id="banner">
           Sensasi Kenikmatan di setiap gigitan{" "}
@@ -19,15 +22,9 @@ export default function Hero() {
           yang membuatnya sangat lezat dan nikmat. Kami juga menawarkan berbagai
           pilihan saus dan sisi makanan yang akan memuaskan selera Anda.
         </p>
-        {session ? (
-          <Link href="/menupage">
-            <button className={`btn ${css.btn}`}>AYO ORDER!</button>
-          </Link>
-        ) : (
-          <Link href="https://chicken-william.vercel.app/api/auth/signin?callbackUrl=https%3A%2F%2Fchicken-william.vercel.app%2Fmenupage">
-            <button className={`btn ${css.btn}`}>AYO ORDER!</button>
-          </Link>
-        )}
+        <Link href="/menupage">
+          <button className={`btn ${css.btn}`}>AYO ORDER!</button>
+        </Link>
       </div>
 
       <div>

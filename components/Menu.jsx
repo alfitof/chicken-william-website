@@ -6,7 +6,7 @@ import { urlFor } from "../lib/client";
 
 export default function Menu({ ayams }) {
   return (
-    <div className={css.container}>
+    <div className={css.container} id="menu">
       <div className={css.heading}>
         <span>OUR MENU</span>
         <span>Menu That Always</span>

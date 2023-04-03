@@ -31,6 +31,7 @@
 }
 
 .right > :nth-child(1) {
+  margin-top: -15px;
   font-size: 2.5rem;
   /* font-weight: normal; */
   /* color: var(--gray); */
@@ -124,5 +125,8 @@
   }
   .additional > :nth-child(1) {
     margin-bottom: 0.2rem;
+  }
+  .right > :nth-child(1) {
+    margin-top: 0;
   }
 }

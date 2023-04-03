@@ -163,7 +163,7 @@ export default function Ayam({ ayam }) {
         </div>
       </div> */}
 
-      <div className="flex flex-col gap-0 mt-5 md:mt-10 md:gap-20 pt-5 justify-center items-center md:flex-row md:items-start space-y-8 md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
+      <div className="flex flex-col gap-0 mt-5 md:mt-10 md:gap-20 pt-20 lg:pt-24 justify-center items-center md:flex-row md:items-start space-y-8 md:space-y-0 md:space-x-4 lg:space-x-8 max-w-6xl w-11/12 mx-auto">
         <div className={css.imageWrapper}>
           <Image
             src={src}
