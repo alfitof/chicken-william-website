@@ -70,7 +70,8 @@ export default function Orders({ order }) {
             <span>Rp, {order.total}</span>
           </div>
         </div>
-        <div className={css.statusContainer}>
+
+        <div className="grid grid-cols-1 content-center gap-20 sm:gap-40 sm:grid-cols-2 md:gap-32 md:grid-cols-4 lg:gap-60 lg:grid-cols-4">
           <div className={css.status}>
             <Image src={Payment} width={50} height={50} alt="" />
             <span>Pembayaran</span>

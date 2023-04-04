@@ -80,19 +80,19 @@ const Nav = () => {
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <div className={css.navright}>
-              {/* <Link href="/cart">
+              <Link href="/cart">
                 <a>
-                  <div className={css.cart}>
-                    <UilShoppingBag size={35} color="#2e2e2e" />
-                    <div className={css.badge}>{items}</div>
+                  <div className={css.cart2}>
+                    <UilShoppingBag size={38} color="#2e2e2e" />
+                    <div className={css.badge2}>{items}</div>
                   </div>
                 </a>
-              </Link> */}
+              </Link>
               {Order && (
                 <Link href={`/order/${Order}`}>
                   <div className={css.cart}>
-                    <UilReceipt size={35} color="#2e2e2e" />
-                    {Order != "" && <div className={css.badge}>1</div>}
+                    <UilReceipt size={33} color="#2e2e2e" />
+                    {Order != "" && <div className={css.badge2}>1</div>}
                   </div>
                 </Link>
               )}
@@ -104,7 +104,7 @@ const Nav = () => {
       </header>
       {/* Mobile Navigation */}
 
-      <nav className="fixed lg:hidden bottom-0 left-0 right-0 z-20 sm:px-8 ">
+      <nav className="fixed sm:hidden bottom-0 left-0 right-0 z-20 sm:px-8 ">
         <div className="bg-white sm:px-3">
           <ul className="flex w-full justify-between items-center px-8 text-black-500">
             <Link activeClassName="active" href="/">
