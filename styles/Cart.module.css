@@ -14,6 +14,7 @@
 
 .detail {
   grid-column: span 2 / span 2;
+  overflow-x: auto;
 }
 
 .tbody > tr > td {

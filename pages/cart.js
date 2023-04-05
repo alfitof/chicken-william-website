@@ -45,10 +45,10 @@ export default function Cart() {
         <div className={css.detail}>
           <table className={css.table}>
             <thead>
-              <th>Ayam</th>
-              <th>Nama</th>
+              <th>Image</th>
+              <th>Name</th>
               <th>Additional</th>
-              <th>Harga</th>
+              <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
               <th></th>
