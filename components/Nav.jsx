@@ -65,7 +65,7 @@ const Nav = () => {
                 Menu
               </div>
             </Link>
-            <Link activeClassName="active" href="#">
+            <Link activeClassName="active" href="/contact">
               <div
                 className={
                   "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
@@ -162,7 +162,7 @@ const Nav = () => {
               </div>
             </Link>
 
-            <Link activeClassName="active" href="#">
+            <Link activeClassName="active" href="/contact">
               <div
                 className={
                   "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +

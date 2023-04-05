@@ -41,7 +41,7 @@ export default function Cart() {
           href="/apple-touch-icon.png"
         ></link>
       </Head>
-      <div className={css.container}>
+      <div className="grid grid-cols-1 mt-18 p-8 text-xs gap-0 lg:grid-cols-3 lg:text-base lg:gap-10 mt-16 lg:mt-20">
         <div className={css.detail}>
           <table className={css.table}>
             <thead>
