@@ -35,22 +35,22 @@ export default function MenuPage({ ayams }) {
 export const getServerSideProps = async ({ req }) => {
   const query = '*[_type == "ayam"]';
   const ayams = await client.fetch(query);
-  // const session = await getSession({ req });
+  const session = await getSession({ req });
 
-  // if (!session) {
-  //   return {
-  //     redirect: {
-  //       destination:
-  //         "https://chicken-william.vercel.app/api/auth/signin?callbackUrl=https%3A%2F%2Fchicken-william.vercel.app%2Fmenupage",
-  //       permanent: false,
-  //     },
-  //   };
-  // }
+  if (!session) {
+    return {
+      redirect: {
+        destination:
+          "https://chicken-william.vercel.app/api/auth/signin?callbackUrl=https%3A%2F%2Fchicken-william.vercel.app%2Fmenupage",
+        permanent: false,
+      },
+    };
+  }
 
   return {
     props: {
       ayams,
-      // session,
+      session,
     },
   };
 };
