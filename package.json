@@ -15,6 +15,7 @@
     "@sanity/client": "^5.3.0",
     "@sanity/image-url": "^1.0.2",
     "@stripe/stripe-js": "^1.32.0",
+    "mongoose": "^7.0.3",
     "next": "12.2.0",
     "next-auth": "^4.20.1",
     "nodemailer": "^6.9.1",

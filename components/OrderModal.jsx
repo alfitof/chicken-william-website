@@ -60,6 +60,7 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
           name="address"
           rows={3}
           placeholder="Address"
+          required
         ></textarea>
         <span>
           You will pay <span>Rp, {total}</span> on delivery
