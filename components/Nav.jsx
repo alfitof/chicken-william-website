@@ -15,7 +15,7 @@ import Logo from "../assets/Logo.png";
 import css from "../styles/Header.module.css";
 
 const Nav = () => {
-  const [session, setSession] = useState(false);
+  const [session, setSession] = useState();
   const [Order, setOrder] = useState("");
   useEffect(() => {
     setOrder(localStorage.getItem("order"));
