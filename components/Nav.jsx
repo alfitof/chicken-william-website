@@ -39,10 +39,12 @@ const Nav = () => {
           }
         >
           <nav className="max-w-screen-xl mx-auto grid grid-flow-col py-2 px-3">
-            <div className={css.logo}>
-              <Image src={Logo} alt="Logo" width={55} height={55} />
-              <span>Chicken William</span>
-            </div>
+            <Link href="/">
+              <div className={css.logo}>
+                <Image src={Logo} alt="Logo" width={55} height={55} />
+                <span>Chicken William</span>
+              </div>
+            </Link>
             <ul className="hidden lg:flex col-start-3 col-end-8 text-black-500  items-center justify-center">
               <Link activeClassName="active" href="/">
                 <div
@@ -236,10 +238,12 @@ const Nav = () => {
           }
         >
           <nav className="max-w-screen-xl mx-auto grid grid-flow-col py-2 px-3">
-            <div className={css.logo}>
-              <Image src={Logo} alt="Logo" width={55} height={55} />
-              <span>Chicken William</span>
-            </div>
+            <Link href="/">
+              <div className={css.logo}>
+                <Image src={Logo} alt="Logo" width={55} height={55} />
+                <span>Chicken William</span>
+              </div>
+            </Link>
             <ul className="hidden lg:flex col-start-3 col-end-8 text-black-500  items-center justify-center">
               <Link activeClassName="active" href="/">
                 <div

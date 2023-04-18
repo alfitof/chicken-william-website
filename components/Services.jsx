@@ -18,20 +18,20 @@ export default function Services() {
           <div className={css.imageWrapper}>
             <Image src={fitur1} objectFit="cover" layout="intrinsic" alt="" />
           </div>
-          <span>Easy to Order</span>
+          <span>Real-time Tracking</span>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus, vitae.
+            Pelanggan dapat melacak pesanan mereka secara real-time dan
+            mendapatkan pembaruan yang akurat tentang status pengiriman
           </span>
         </div>
         <div className={css.fitur}>
           <div className={css.imageWrapper}>
             <Image src={fitur2} objectFit="cover" layout="intrinsic" alt="" />
           </div>
-          <span>Easy to Order</span>
+          <span>Fast and Reliable Delivery</span>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus, vitae.
+            Pengiriman pada waktu yang tepat dan dapat diandalkan untuk
+            memastikan pelanggan puas
           </span>
         </div>
         <div className={css.fitur}>
@@ -40,8 +40,8 @@ export default function Services() {
           </div>
           <span>Easy to Order</span>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus, vitae.
+            Pengguna untuk melakukan pesanan atau pembelian dengan lebih mudah
+            dan cepat.
           </span>
         </div>
       </div>

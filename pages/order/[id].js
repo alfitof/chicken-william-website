@@ -59,11 +59,7 @@ export default function Orders({ order }) {
           </div>
           <div>
             <span>Metode Pembayaran</span>
-            <span>
-              {order.method === 0
-                ? "Cash on delivery (COD)"
-                : "Pembayaran Online"}
-            </span>
+            <span>Cash on delivery</span>
           </div>
           <div>
             <span>Total</span>
