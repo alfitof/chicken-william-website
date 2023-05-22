@@ -1,7 +1,6 @@
 import { client } from "../../lib/client";
 import Layout from "../../components/layout";
 import css from "../../styles/Order.module.css";
-import { UilBill, UilBox } from "@iconscout/react-unicons";
 import Cooking from "../../assets/cooking.png";
 import Payment from "../../assets/payment.png";
 import Paket from "../../assets/package.png";
@@ -64,6 +63,10 @@ export default function Orders({ order }) {
           <div>
             <span>Total</span>
             <span>Rp, {order.total}</span>
+          </div>
+          <div>
+            <span>Catatan</span>
+            <span>{order.notes}</span>
           </div>
         </div>
 

@@ -1,5 +1,4 @@
 import { useSession, signIn, signOut } from "next-auth/react";
-import css from "../styles/Header.module.css";
 import Image from "next/image";
 
 export default function Component() {
@@ -19,17 +18,16 @@ export default function Component() {
               height={38}
               alt=""
             />{" "}
-            <div className="dropdown-content">
+            <div className="dropdown-content drop-shadow-lg">
               {" "}
               <ul>
-                <li>
-                  <span>Settings</span>
-                </li>{" "}
-                <li>
-                  <span>Profiles</span>
-                </li>{" "}
+                <p className="pt-2 font-semibold">{session.user.name}</p>
+                <p className="pt-1 text-orange-500 mb-3 text-xs">
+                  {session.user.email}
+                </p>
+                <hr className="mb-2" />
                 <li onClick={() => signOut()}>
-                  <span>Logout</span>
+                  <span className="py-1 pl-1 font-medium">Logout</span>
                 </li>{" "}
               </ul>{" "}
             </div>{" "}

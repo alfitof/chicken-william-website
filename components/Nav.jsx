@@ -3,11 +3,7 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 
 import { useStore } from "../store/store";
-// Import react scroll
-
 import { UilShoppingBag, UilReceipt } from "@iconscout/react-unicons";
-// import { Link as Link } from "react-scroll";
-// import ButtonOutline from "../misc/ButtonOutline.";
 import { useRouter } from "next/router";
 import Button from "../components/Button";
 import Image from "next/image";
@@ -22,7 +18,6 @@ const Nav = () => {
   }, []);
   const items = useStore((state) => state.cart.ayams.length);
   const router = useRouter();
-  const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -49,7 +44,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer animation-hover font-semibold inline-block relative" +
                     (router.pathname == "/"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 a")
@@ -61,7 +56,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/menupage">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer animation-hover font-semibold inline-block relative" +
                     (router.pathname == "/menupage"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 ")
@@ -73,7 +68,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/contact">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer animation-hover font-semibold inline-block relative" +
                     (router.pathname == "/contact"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 ")
@@ -103,7 +98,6 @@ const Nav = () => {
                 )}
                 <Button />
               </div>
-              {/* <ButtonOutline>Sign Up</ButtonOutline> */}
             </div>
           </nav>
         </header>
@@ -248,7 +242,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer font-semibold animation-hover inline-block relative" +
                     (router.pathname == "/"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 a")
@@ -260,7 +254,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/menupage">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer animation-hover font-semibold inline-block relative" +
                     (router.pathname == "/menupage"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 ")
@@ -272,7 +266,7 @@ const Nav = () => {
               <Link activeClassName="active" href="/contact">
                 <div
                   className={
-                    "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                    "px-4 py-2 mx-2 cursor-pointer animation-hover font-semibold inline-block relative" +
                     (router.pathname == "/contact"
                       ? " text-orange-500 animation-active "
                       : " text-black-500 hover:text-orange-500 ")

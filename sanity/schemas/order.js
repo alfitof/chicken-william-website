@@ -28,9 +28,12 @@ export default {
       },
     },
     {
-      name: 'method',
-      title: 'Method',
-      type: 'number',
+      name: 'notes',
+      title: 'Notes',
+      type: 'string',
+      option: {
+        maxLength: 100,
+      },
     },
     {
       name: 'total',

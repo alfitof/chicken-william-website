@@ -62,6 +62,12 @@ export default function OrderModal({ opened, setOpened, PaymentMethod }) {
           placeholder="Address"
           required
         ></textarea>
+        <textarea
+          onChange={handleInput}
+          name="notes"
+          rows={3}
+          placeholder="Notes"
+        ></textarea>
         <span>
           You will pay <span>Rp, {total}</span> on delivery
         </span>

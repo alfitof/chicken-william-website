@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/layout";
-import Banner from "../components/Banner";
 import css from "../styles/Home.module.css";
 
 import Services from "../components/Services";
-import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 
 export default function Home() {
@@ -24,13 +22,9 @@ export default function Home() {
             href="/apple-touch-icon.png"
           ></link>
         </Head>
-        {/* body */}
         <main>
-          {/* <Nav /> */}
           <Hero />
-          {/* <Banner /> */}
           <Services />
-          {/* <ProductSection /> */}
         </main>
       </div>
     </Layout>
