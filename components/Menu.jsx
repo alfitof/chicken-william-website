@@ -35,10 +35,6 @@ export default function Menu({ ayams }) {
                       Rp, {ayam.price[0]}
                     </span>
                   </div>
-                  <span className="flex gap-1 bg-gray-100 text-gray-400 text-xs uppercase font-normal rounded-lg px-2 py-1 absolute top-1 left-1">
-                    <HiOutlineClock size={16} />
-                    15 mins
-                  </span>
                 </div>
               </Link>
             </div>
